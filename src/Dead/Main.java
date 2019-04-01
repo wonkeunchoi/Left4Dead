@@ -41,34 +41,33 @@ public class Main {
 
 
 		while(일반인.HP >= 0 && B4.HP >= 0) {
-			
-		while(flag) {
-			
-			맵.좀비등장(남자);
-			flag = false;
-		}
-		while(남자.HP == 0)break; {
-			new Battle(남자,일반인);
-			
+
+			while(flag) {
+
+				맵.좀비등장(남자);
+				flag = false;
+			}
+			while(남자.HP == 0)break; {
+				new Battle(남자,일반인);
+
 			}
 			if(남자.HP == 0) {
-				
+
 				new 스토리1();
-			
-while(flag2) {
-			
-			맵.좀비등장(여자);
-			flag2 = false;
-		}
-		if(여자.HP == 0) break; {
-		new Battle(여자,일반인);
-		}
+
+				while(flag2) {
+
+					맵.좀비등장(여자);
+					flag2 = false;
+				}
+				if(여자.HP == 0) break; {
+					new Battle(여자,일반인);
+				}
 			}
 			if (여자.HP == 0) {
 				break;
 			}
-			
-	}		
-		System.out.println("사망하셨습니다.. 게임종료");
+
+		}		
 	}
 }
